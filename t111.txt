@@ -1,0 +1,27 @@
+import java.util.*;
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+         int num = 1 + (int)(100 * Math.random());
+       int count=5;
+        for(int i=1;i<=count;i++){
+             System.out.println("OUR GUEESSING NUMBER Is");
+            int n=sc.nextInt();
+            if(num==n){
+                System.out.println("YOUR GUESS IS CORRECT"+"CONGRATULATIONS!!!!");
+                break;
+            }
+            else if(num<n && i!=count){
+              System.out.println("The number is "+ "lesser than " + n);  
+            }
+            else if(num>n && i!=count){
+                System.out.println("The number is "+ "greater than " + n);
+            }
+            if(i==count){
+                System.out.println("YOUR TRAILS ARE COMPLETED"+ " sorryyyy"); 
+            }
+            
+            
+        }
+    }
+}
